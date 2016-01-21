@@ -1,0 +1,20 @@
+{
+    "name": "mallow/testing",
+    "description": "Provides a testing Layout file with the contents you define for every test you create with mallow:test command.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "PhpTeam",
+            "email": "php@mallow-tech.com"
+        }
+    ],
+    "autoload": {
+        "psr-4":{
+            "Mallow\\Testing\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/support" : "~5.0.0"
+    }
+}
