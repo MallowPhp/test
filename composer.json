@@ -15,6 +15,11 @@
     },
     "minimum-stability": "dev",
     "require": {
-        "illuminate/support" : "~5.0.0"
+        "php": ">=5.4.0",
+        "illuminate/support": "~5.1"
+    },
+    "require-dev":{
+        "phpunit/phpuint" : "4.*",
+        "illuminate/console" : "~5.0"
     }
 }
