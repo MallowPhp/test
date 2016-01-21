@@ -14,7 +14,7 @@
             "Mallow\\Testing\\": "src/"
         }
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
         "php": ">=5.4.0",
         "illuminate/support": "~5.1"
