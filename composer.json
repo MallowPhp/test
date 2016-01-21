@@ -8,7 +8,6 @@
             "email": "php@mallow-tech.com"
         }
     ],
-    "minimum-stability": "dev",
     "autoload": {
         "psr-4":{
             "Mallow\\Testing\\": "src/"
