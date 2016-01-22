@@ -20,6 +20,6 @@
      This will automatically run the testcases in local memory without storing in your original database.
   5. Then run command,
 
-      php artisan mallow:test {Name of your test class}
+      **php artisan mallow:test {Name of your test class}**
 
   6. This testing is for testing your basic CRUD and the responses you get after the POST,PUT data into database.
