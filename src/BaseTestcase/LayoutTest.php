@@ -24,24 +24,24 @@ class LayoutTest extends TestCase
 
     }';
 
-    //JSON POST Request.This JSON is sent in method store.
+    //JSON POST Request.This JSON is sent to method store of your laravel controller.
 
     protected $data1 = '{
 
     }';
 
-    //JSON PUT Request.This JSON is sent in method store.
+    //JSON PUT Request.This JSON is sent to method update of your laravel controller.
 
     protected $data_update = '{
 
     }';
 
-    //String to be checked in the database of above POST request($data1).
+    //String to be checked in the database of after POST request($data1).
 
-    protected $checkDataExistsInTable = [];         //['name'=>'mallow-5'];
+    protected $checkDataExistsInTable = [];         //After storing,Before Updating we are checking['name'=>'mallow-1'];
 
-    //String to be checked in the database of above PUT request($data_update).
-    protected $checkDataAfterUpdate = [];           //['pincode'=>'517234'];
+    //String to be checked in the database of after PUT request($data_update).
+    protected $checkDataAfterUpdate = [];           //After Updating we are checking ['name'=>'mallow-2'];
 
     public function setUp()
     {
