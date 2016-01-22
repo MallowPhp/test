@@ -43,14 +43,15 @@ class TestCommand extends Command{
                 'name' => $name
             ]);
             try{
-                $test_file = __DIR__."\\LayoutTest.php";
-                $test_content = File::get($test_file);
-                $filename = "tests\\".$name.'.php';
-                file_put_contents($filename,str_replace("LayoutTest",$name,file_get_contents($test_file)));
-                $this->info("Testing Layout file created successfully,follow comments in file to test your CRUD");
+                $test_file = __DIR__."/../BaseTestcase/LayoutTest.php";
+                $filename = "tests/".$name.'.php';
+                if(File::exists($filename)){
+                    file_put_contents($filename,str_replace("LayoutTest",$name,file_get_contents($test_file)));
+                    $this->info("Testing Layout file created successfully,follow comments in file to test your CRUD");
+                }
             }
             catch(\Exception $e){
-                die("The file doesn't exist");
+                die("The base file doesn't exist");
             }
         }
     }
