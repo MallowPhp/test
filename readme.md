@@ -6,7 +6,7 @@
 
 ## Define the Service Providers in config/app.php
 
-     **Mallow\Testing\MallowTestingLayout::class,**
+     Mallow\Testing\MallowTestingLayout::class,
 
 ## Usage
 
